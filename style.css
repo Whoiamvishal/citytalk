@@ -1,0 +1,79 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  .container {
+    text-align: center;
+    background: #ffffffdd;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .search-box {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #city-input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #cdb1b1;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  #search-button {
+    width: 30%;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #search-button:hover {
+    background-color: #45a049;
+  }
+  
+  .weather-info h3,
+  .weather-info h5 {
+    margin: 10px 0;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  #city-name {
+    font-size: 24px;
+    color: #a75d5d;
+  }
+  
+  #city-time, #city-temp, #city-date {
+    font-size: 18px;
+    color: #555;
+  }
+  
